@@ -1,16 +1,20 @@
-### PHP dd function
+## PHP dd function
 
  Simply seeks to dump and die, like in a traditional laravel app
  Prints stack trace and any passed params before killing off
- 
- Usage:
+
+#### Usage
+``` 
     include_once 'debug.php'
+    
     try {
-    // Do something
-    }catch(Exception $e) {
+    // Do something that raises excepts
+    }
+    catch(Exception $e) {
     // Prints except message
     dd($e->getMessage());
     }
+```
 
 ---
 
