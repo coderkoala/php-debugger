@@ -10,18 +10,18 @@
 if (!function_exists('dd')) {
     function dd(...$data)
     {
+	    // Recycles buff
 	    ob_end_clean();
 	    ob_start();
-	    $resetStyling = "<style>
-					    .wiper{
-					      all: initial !important;
-					      * {
-					        all: unset !important; 
-					      }
-					    }
-					    </style>
-					  ";
-	    echo $resetStyling;
+	    
+	    echo "<style>
+			.wiper{
+			all: initial !important;
+			* {
+			all: unset !important; 
+			}}
+	    </style>
+	    ";
 	    ini_set("highlight.comment", "#969896; font-style: italic");
 	    ini_set("highlight.default", "#FFFFFF !important");
 	    ini_set("highlight.html", "#D16568 !important");
