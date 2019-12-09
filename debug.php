@@ -33,6 +33,10 @@ if (!function_exists('dd')) {
     			style=\"background-color: #1C1E21 !important; color:#7FA3BC; font-weight: bold padding: 1rem\">
     			{$output}<br>
     			<hr>";
+	    if(!empty($data) && ($data[-1] == false)){
+		    echo "</div></span>";
+		    exit();
+	    }
 	    $output = highlight_string("<?php\n\n" . var_export(debug_backtrace(), true), true);
 	    echo "<div style=\"background-color: #1C1E21 !important; color:#7FA3BC; font-weight: bold padding: 1rem\">{$output}<br>";
 	    echo "</div></span>";
