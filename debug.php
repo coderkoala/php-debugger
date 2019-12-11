@@ -6,7 +6,6 @@
  *  include_once 'path_to_debug.php';
  *  dd() OR dd(params[])
  */
-
 if (!function_exists('dd')) {
     function dd(...$data)
     {
