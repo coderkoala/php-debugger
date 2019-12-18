@@ -21,11 +21,12 @@ if (!function_exists('dd')) {
 			}}
 	    </style>
 	    ";
-	    ini_set("highlight.comment", "#969896; font-style: italic");
-	    ini_set("highlight.default", "#FFFFFF !important");
-	    ini_set("highlight.html", "#D16568 !important");
-	    ini_set("highlight.keyword", "#7FA3BC !important; font-weight: bold");
-	    ini_set("highlight.string", "#F2C47E !important");
+		ini_set("highlight.comment", "#969896; font-style: italic ; background: #1C1E21 !important");
+		ini_set("highlight.code", "#111111; font-style: italic ; background: #1C1E21 !important");
+		ini_set("highlight.default", "#FFFFFF !important; background: #1C1E21 !important");
+		ini_set("highlight.html", "#D16568 !important ; background: #1C1E21 !important");
+		ini_set("highlight.keyword", "#7FA3BC !important; font-weight: bold ; background: #1C1E21 !important");
+		ini_set("highlight.string", "#F2C47E !important ; background: #1C1E21 !important");
 	    $output = highlight_string("<?php\n\n" . var_export($data, true), true);
 	    echo "<span>
     			<div 
